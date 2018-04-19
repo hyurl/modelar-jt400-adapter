@@ -30,7 +30,6 @@ class IbmdbAdapter extends modelar_1.Adapter {
         delete config.type;
         return new Promise((resolve, reject) => {
             try {
-                console.log(config);
                 if (IbmdbAdapter.Pools[db.dsn] === undefined)
                     IbmdbAdapter.Pools[db.dsn] = node_jt400_1.pool(config);
                 this.connection = IbmdbAdapter.Pools[db.dsn];

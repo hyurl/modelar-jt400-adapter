@@ -34,7 +34,6 @@ export class IbmdbAdapter extends Adapter {
 
         return new Promise((resolve, reject) => {
             try {
-                console.log(config);
                 if (IbmdbAdapter.Pools[db.dsn] === undefined)
                     IbmdbAdapter.Pools[db.dsn] = pool(config);
 
