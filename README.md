@@ -41,4 +41,4 @@ instead.
 
 This adapter accepts some additional configurations for the connection, please
 check them out at 
-[https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzahh/javadoc/com/ibm/as400/access/doc-files/JDBCProperties.html](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzahh/javadoc/com/ibm/as400/access/doc-files/JDBCProperties.html#general).
+[https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzahh/jdbcproperties.htm](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzahh/jdbcproperties.htm).
