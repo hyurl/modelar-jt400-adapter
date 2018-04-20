@@ -90,10 +90,18 @@ class IbmdbAdapter extends modelar_1.Adapter {
         }
     }
     commit(db) {
-        throw new Error("The current adapter doesn't support manual commit.");
+        return this.connection.execute("commit").then(() => {
+            this.connection = this.originConnection;
+            this.originConnection = null;
+            return db;
+        });
     }
     rollback(db) {
-        throw new Error("The current adapter doesn't support manual rollback.");
+        return this.connection.execute("rollback").then(() => {
+            this.connection = this.originConnection;
+            this.originConnection = null;
+            return db;
+        });
     }
     release() {
         this.close();

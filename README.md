@@ -34,8 +34,8 @@ adapter, they will keep the form of which they're defined.
 
 This adapter is based on [node-jt400](https://www.npmjs.com/package/node-jt400),
 only meant to connect old versions of DB2 (lower 9.7, I guess), it doesn't 
-support all the features of Modelar, e.g. manually `commit` and `rollback` is 
-not supported. For new versions, please use 
+implement all the features of the Modelar base adapter. For new versions, 
+please use 
 [modelar-ibmdb-adapter](https://www.npmjs.com/package/modelar-ibmdb-adapter) 
 instead.
 
